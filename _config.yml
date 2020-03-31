@@ -1,18 +1,2 @@
-title: Hacker-Blog
-description: "A Jekyll Blog Theme For Hackers"
-author:
-    name: "guodongbin"
-    email: "416192759@qq.com"
-    url: "https://guodongbin.github.com"
 theme: jekyll-theme-hacker
-future: true
-plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-sitemap
-
 show_downloads: "false"
- 
-# Custom variables
-owner : "guodongbin"
-year : "2020"
