@@ -6,10 +6,10 @@ title: Archive
 <section>
   {% if site.posts[0] %}
 
-    {% capture currentyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
-    {% capture firstpostyear %}{{ site.posts[0].date | date: '%Y' }}{% endcapture %}
+    {% capture currentyear %}{{ 'now' | date: "%Y年" }}{% endcapture %}
+    {% capture firstpostyear %}{{ site.posts[0].date | date: '%Y年' }}{% endcapture %}
     {% if currentyear == firstpostyear %}
-        <h3>This year's posts</h3>
+        <h3>今年发表</h3>
     {% else %}  
         <h3>{{ firstpostyear }}</h3>
     {% endif %}
@@ -18,11 +18,11 @@ title: Archive
       {% unless post.next %}
         <ul>
       {% else %}
-        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% capture year %}{{ post.date | date: '%Y年' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y年' }}{% endcapture %}
         {% if year != nyear %}
           </ul>
-          <h3>{{ post.date | date: '%Y' }}</h3>
+          <h3>{{ post.date | date: '%Y年' }}</h3>
           <ul>
         {% endif %}
       {% endunless %}
